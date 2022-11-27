@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="model_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0614036145891947 -0.0311590475123982 0.286261746786977"
+        rpy="0 0 0" />
+      <mass
+        value="298.509233547966" />
+      <inertia
+        ixx="16.4208301469345"
+        ixy="1.71186117058143E-16"
+        ixz="-2.93790138588193"
+        iyy="29.6107636526538"
+        iyz="-1.00527893408859E-15"
+        izz="29.8332638698603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="1_Link">
+    <inertial>
+      <origin
+        xyz="1.60697218087869E-05 0.00116628369507032 -0.0451354129709601"
+        rpy="0 0 0" />
+      <mass
+        value="0.364069888756909" />
+      <inertia
+        ixx="0.00115200393636405"
+        ixy="-5.4918442620808E-06"
+        ixz="1.28438032282803E-06"
+        iyy="0.000753500931575538"
+        iyz="9.32157909548577E-05"
+        izz="0.000668038074921814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1_joint"
+    type="continuous">
+    <origin
+      xyz="0.441995939294503 0.178840952487607 -0.0229999999999991"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="1_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="1wheel_Link">
+    <inertial>
+      <origin
+        xyz="8.88178419700125E-16 -4.71844785465692E-16 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.234111484545512" />
+      <inertia
+        ixx="0.000164839103436489"
+        ixy="1.78671052407495E-06"
+        ixz="-3.49968625771008E-20"
+        iyy="0.000294487629241806"
+        iyz="-4.36087566108968E-19"
+        izz="0.00016481448512004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/1wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/1wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.126"
+      rpy="0 0 0" />
+    <parent
+      link="1_Link" />
+    <child
+      link="1wheel_Link" />
+    <axis
+      xyz="-0.999115087651117 -0.042059976556111 0" />
+  </joint>
+  <link
+    name="2_Link">
+    <inertial>
+      <origin
+        xyz="-1.95522219614275E-05 -0.00116623051064699 -0.0451354129709601"
+        rpy="0 0 0" />
+      <mass
+        value="0.364069888756909" />
+      <inertia
+        ixx="0.00115196758552763"
+        ixy="-6.68168762785519E-06"
+        ixz="-1.56272083948835E-06"
+        iyy="0.000753537282411958"
+        iyz="-9.32115401639264E-05"
+        izz="0.000668038074921814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2_joint"
+    type="continuous">
+    <origin
+      xyz="0.441995939294505 -0.241159047512393 -0.0229999999999976"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="2_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="2wheel_Link">
+    <inertial>
+      <origin
+        xyz="-7.7715611723761E-16 -5.55111512312578E-17 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.234111484545512" />
+      <inertia
+        ixx="0.000164850929777312"
+        ixy="2.17381284565927E-06"
+        ixz="-6.0687362562351E-20"
+        iyy="0.000294475802900982"
+        iyz="-4.31286988801787E-19"
+        izz="0.00016481448512004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/2wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/2wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.126"
+      rpy="0 0 0" />
+    <parent
+      link="2_Link" />
+    <child
+      link="2wheel_Link" />
+    <axis
+      xyz="-0.469475282854675 0.882945614853215 0" />
+  </joint>
+  <link
+    name="3_Link">
+    <inertial>
+      <origin
+        xyz="1.14559204554832E-05 0.00116633813932027 -0.0451354129709601"
+        rpy="0 0 0" />
+      <mass
+        value="0.364069888756909" />
+      <inertia
+        ixx="0.00115204114999134"
+        ixy="-3.91525557933936E-06"
+        ixz="9.15620008164253E-07"
+        iyy="0.00075346371794825"
+        iyz="9.32201424379628E-05"
+        izz="0.000668038074921814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.428004060705497 0.178840952487604 -0.0230000000000021"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="3_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="3wheel_Link">
+    <inertial>
+      <origin
+        xyz="-4.44089209850063E-16 -3.60822483003176E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.234111484545512" />
+      <inertia
+        ixx="0.000164826996396241"
+        ixy="1.27378490980699E-06"
+        ixz="-2.67378742371781E-20"
+        iyy="0.000294499736282053"
+        iyz="-4.80888916955773E-19"
+        izz="0.00016481448512004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/3wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/3wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.126"
+      rpy="0 0 0" />
+    <parent
+      link="3_Link" />
+    <child
+      link="3wheel_Link" />
+    <axis
+      xyz="-0.907981805842857 -0.419009594470513 0" />
+  </joint>
+  <link
+    name="4_Link">
+    <inertial>
+      <origin
+        xyz="-1.06379015178959E-05 -0.00116634588711875 -0.0451354129709582"
+        rpy="0 0 0" />
+      <mass
+        value="0.364069888756909" />
+      <inertia
+        ixx="0.00115204644589235"
+        ixy="-3.63570785126693E-06"
+        ixz="-8.50239447108493E-07"
+        iyy="0.000753458422047238"
+        iyz="-9.32207616844879E-05"
+        izz="0.000668038074921815" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.428004060705495 -0.241159047512396 -0.0230000000000009"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="4_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="4wheel_Link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 7.21644966006352E-16 3.60822483003176E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.234111484545512" />
+      <inertia
+        ixx="0.000164825273433677"
+        ixy="1.18283716185713E-06"
+        ixz="2.32577647904679E-20"
+        iyy="0.000294501459244617"
+        iyz="-4.52457267069688E-19"
+        izz="0.00016481448512004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/4wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/4wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.126"
+      rpy="0 0 0" />
+    <parent
+      link="4_Link" />
+    <child
+      link="4wheel_Link" />
+    <axis
+      xyz="0.54221 0.84025 0" />
+  </joint>
+  <link
+    name="arm_Link">
+    <inertial>
+      <origin
+        xyz="0.191064265563844 0.189272489662822 -0.123591835779442"
+        rpy="0 0 0" />
+      <mass
+        value="14.0185899347046" />
+      <inertia
+        ixx="0.0803961333344776"
+        ixy="-0.0147701962245957"
+        ixz="0.0157347050889354"
+        iyy="0.0799889560140923"
+        iyz="0.00505537325218257"
+        izz="0.0584494594785273" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm_joint"
+    type="fixed">
+    <origin
+      xyz="0.04041 -0.058485 1.1182"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="arm_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="laser_Link">
+    <inertial>
+      <origin
+        xyz="0.00102572491313929 -0.049999998301415 0.0436962446755098"
+        rpy="0 0 0" />
+      <mass
+        value="1.59092590333983" />
+      <inertia
+        ixx="0.00338320624461693"
+        ixy="-2.00339805124173E-11"
+        ixz="-3.06850534360552E-05"
+        iyy="0.00330959957297259"
+        iyz="1.63169725636016E-10"
+        izz="0.00453491010532219" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/laser_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/laser_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_jont"
+    type="fixed">
+    <origin
+      xyz="0.327 0.013841 0.59808"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_Link">
+    <inertial>
+      <origin
+        xyz="-0.0158609426134609 3.77800140321377E-07 -0.00303911988526284"
+        rpy="0 0 0" />
+      <mass
+        value="0.168019718296732" />
+      <inertia
+        ixx="0.00063541281818983"
+        ixy="-1.1952807983635E-09"
+        ixz="-4.86668399890799E-06"
+        iyy="3.19165088546913E-05"
+        iyz="3.04177197927283E-09"
+        izz="0.000637382388778405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/camera_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_urdf/meshes/camera_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.50458 -0.027377 0.648"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

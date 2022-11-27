@@ -1,0 +1,25 @@
+<launch>
+  <arg
+    name="model" />
+  <param
+    name="robot_description"
+    textfile="$(find model_urdf)/urdf/model_urdf.urdf" />
+  <node
+    name="joint_state_publisher_gui"
+    pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+  <node 
+    name="base2laser" 
+    pkg="tf" 
+    type="static_transform_publisher" 
+    args="0.327 0 0.65 0 0 0 1 /base_link /laser 50"/> 
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find model_urdf)/urdf.rviz" />
+</launch>
